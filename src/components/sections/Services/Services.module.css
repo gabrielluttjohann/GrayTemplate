@@ -1,0 +1,64 @@
+.sectionBg {
+  background-color: #4d5564;
+}
+
+.margin {
+  margin: 0 16px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.card {
+  margin: 20px;
+  width: 100%;
+  max-width: 400px;
+  background-color: #3e4650;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  background: white;
+  height: 200px;
+  margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .cardContainer {
+    flex-direction: column;
+  }
+
+  .card {
+    margin: 16px 0;
+    padding: 1.5rem;
+  }
+
+
+  .card:hover {
+    cursor: pointer;
+  }
+  .image {
+    height: 180px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    padding: 2rem;
+    margin: 20px;
+  }
+}

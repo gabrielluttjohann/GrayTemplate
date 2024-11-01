@@ -1,0 +1,22 @@
+.videoButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Tamanho do botão - ajuste conforme necessário */
+  height: 50px; /* Igual à largura para tornar o botão circular */
+  border-radius: 50%; /* Faz o botão ficar circular */
+  background-color: #4d5564; /* Cor de#000 fundo do botão */
+  border: none; /* Remove a borda */
+  cursor: pointer;
+  transition: transform 0.2s ease; 
+}
+
+.videoButton:hover {
+  transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+  background-color: #5a6374;
+  transition: 0.3s ease-in-out;
+}
+
+.videoButton:active {
+  transform: scale(0.9); /* Efeito de redução ao clicar */
+}

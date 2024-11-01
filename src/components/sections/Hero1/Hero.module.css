@@ -1,0 +1,32 @@
+.heroSection {
+  background-color: var(--color-light-green);
+  min-height: 70vh; /* Permite que a seção cresça se necessário */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adiciona algum espaço interno */
+  box-sizing: border-box; /* Inclui padding na altura total */
+}
+
+.container {
+  width: 90%; /* Ajusta a largura para ser responsiva */
+  max-width: 800px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0; /* Utiliza porcentagem para ser mais responsivo */
+  text-align: center;
+}
+
+/* Ajustes para conteúdo dentro da wrapper */
+.wrapper h1 {
+  max-width: 100%; /* Limita a largura do texto para melhor legibilidade */
+  font-size: calc(
+    2.2rem + 1vw
+  ); /* Escala o tamanho da fonte com a largura da tela */
+}

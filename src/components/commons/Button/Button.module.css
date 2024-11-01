@@ -1,0 +1,23 @@
+.buttonContainer {
+  margin: 3rem 0;
+}
+
+.a {
+  padding: 16px;
+}
+
+.a:hover {
+  cursor: pointer;
+}
+
+.button {
+  padding: 16px;
+  border: none;
+  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #5d6779;
+  transition: 0.3s ease-in-out;
+}

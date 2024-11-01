@@ -1,0 +1,84 @@
+.section {
+  background-color: #eef1f6;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.titleContainer {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contentContainer {
+  display: flex;
+  gap: 5rem;
+  padding: 0 3rem;
+}
+
+.cardContainer {
+  display: flex;
+  align-items: stretch; /* Ajusta para que todos os cards tenham a mesma altura */
+  justify-content: center;
+  padding: 3rem;
+}
+
+
+.cardContainerAlt {
+  display: flex;
+  align-items: stretch; /* Ajusta para que todos os cards tenham a mesma altura */
+  justify-content: center;
+  padding: 3rem;
+  gap: 3rem;
+}
+
+
+.cardAltBg {
+  
+  background-color: #eef1f6;
+}
+
+.cardAlt {
+  background: #fff;
+  padding: 3rem;
+  
+}
+
+.card {
+  padding: 2rem;
+  background-color: #eef1f6;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cardImageMiddle {
+  background-color: #4d5564;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Preenche o espaço do card central */
+}
+
+@media (max-width: 576px) {
+  .contentContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
+  }
+}
+
+
+@media (max-width: 992px) {
+  .cardContainer, .cardContainerAlt {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,80 @@
+.section {
+  padding: 5rem 0; /* Espaço ao redor da seção */
+  background-color: #4d5564; /* Cor de fundo */
+  color: white; /* Cor do texto */
+}
+
+.contentContainer {
+  display: flex; /* Flexbox para layout */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between; /* Espaço entre os elementos */
+  flex-wrap: wrap; /* Permite quebra em telas menores */
+}
+
+.titleContainer {
+  flex: 1; /* Ocupa espaço proporcional */
+  text-align: left; /* Alinha texto à esquerda */
+  padding: 0 1rem; /* Espaçamento lateral */
+}
+
+.heading {
+  font-size: 2rem; /* Aumenta o tamanho do título */
+  margin-bottom: 0.5rem; /* Espaçamento abaixo do título */
+}
+
+.subheading {
+  font-size: 1.2rem; /* Tamanho do subtítulo */
+  margin-bottom: 1rem; /* Espaçamento abaixo do subtítulo */
+}
+
+.iconContainer {
+  flex: 1; /* Ocupa espaço proporcional */
+  display: flex; /* Flex para centralizar o ícone */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 0 1rem; /* Espaçamento lateral */
+}
+
+.circle {
+  display: flex; /* Flex para centralizar o ícone dentro do círculo */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  width: 100px; /* Largura do círculo */
+  height: 100px; /* Altura do círculo */
+  border-radius: 50%; /* Círculo */
+  background-color: #6c757d; /* Cor de fundo do círculo */
+}
+
+.icon {
+  font-size: 3rem; /* Tamanho do ícone */
+  color: white; /* Cor do ícone */
+}
+
+.descriptionContainer {
+  flex: 1; /* Ocupa espaço proporcional */
+  text-align: left; /* Alinha texto à esquerda */
+  padding: 0 1rem; /* Espaçamento lateral */
+}
+
+.paragraph {
+  margin-top: 1rem; /* Espaçamento acima do parágrafo */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column; /* Layout em coluna em telas menores */
+    align-items: center; /* Centraliza itens */
+  }
+
+  .titleContainer,
+  .iconContainer,
+  .descriptionContainer {
+    flex: none; /* Remove flexibilidade */
+    width: 100%; /* Ocupa toda a largura */
+    text-align: center; /* Centraliza texto */
+  }
+
+  .iconContainer {
+    padding: 1rem 0; /* Espaçamento vertical para ícone */
+  }
+}

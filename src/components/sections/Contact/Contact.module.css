@@ -1,0 +1,61 @@
+.contactSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.mapBg {
+  background-color: #eef1f6;
+}
+
+.mapContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 2rem auto 0;
+}
+
+.form h2 {
+  margin-bottom: 1rem;
+}
+
+.credentials {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.credentials input,
+.form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #eef1f6;
+  border: none;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.submitButton {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #4D5564;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #646f83;
+}
