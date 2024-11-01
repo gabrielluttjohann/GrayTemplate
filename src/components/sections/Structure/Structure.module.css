@@ -24,28 +24,22 @@
   display: flex;
   align-items: stretch; /* Ajusta para que todos os cards tenham a mesma altura */
   justify-content: center;
-  padding: 3rem;
 }
-
 
 .cardContainerAlt {
   display: flex;
   align-items: stretch; /* Ajusta para que todos os cards tenham a mesma altura */
   justify-content: center;
-  padding: 3rem;
   gap: 3rem;
 }
 
-
 .cardAltBg {
-  
   background-color: #eef1f6;
 }
 
 .cardAlt {
   background: #fff;
   padding: 3rem;
-  
 }
 
 .card {
@@ -76,9 +70,9 @@
   }
 }
 
-
 @media (max-width: 992px) {
-  .cardContainer, .cardContainerAlt {
+  .cardContainer,
+  .cardContainerAlt {
     flex-direction: column;
   }
 }
